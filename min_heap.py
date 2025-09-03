@@ -54,7 +54,7 @@ class MinHeap:
         """
         i = 0
         heap_size = len(self.heap)
-        while self.left_child(i) < heap_size:
+        while i <= heap_size:
             smallest = i
             left, right = self.left_child(i), self.right_child(i)
             if left < heap_size and self.heap[left] < self.heap[smallest]:
